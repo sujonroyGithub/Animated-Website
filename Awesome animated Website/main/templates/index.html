@@ -1,0 +1,482 @@
+{% extends 'basic.html' %}
+{% block title %} Awesome-Home {% endblock title %}
+{% block body %}
+{% load static %}
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<style>
+    
+    html{
+    scroll-behavior: smooth;
+}
+body{
+    font-style: italic
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.hr-style{
+   border: 2px dotted rgb(195, 18, 18);
+   width: 100%;
+  
+   
+   border-color: solid black;
+   
+    
+}
+
+/* header starts */
+header{
+    background-image: url(imges/bgc.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.benner-container{
+    height: 100vh;
+}
+.navbar{
+    padding: 1% 10%;
+    background-color: rgba(0,0,0,0.3);
+}
+.navbar-icon{
+    color: white;
+
+}
+
+.nav-link{
+    color: white;
+    margin: 10px;
+    border-radius: 7px;
+    transition: 4s;
+}
+.nav-link:hover{
+    background-color: #2980b9;
+    color: aliceblue;
+    transform: scale(1.1);
+
+}
+.benner-container h1{
+    font-size: 3.5rem;
+    background-color: rgb(16, 17, 0.5);
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+/* header ends */
+/* main section start here */
+/* features start form here */
+#features{
+    padding: 5% 10%;
+    background-color: #e8ded2;
+    
+}
+.features-col{
+    border: 1px solid rgb(234, 9, 47);
+    border-radius: 7px;
+    padding: 15px;
+    margin: 39px 35px;
+    transition: .4s;
+}
+.features-col:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px black;
+}
+.icon-syle{
+    background-color: #bb0aac;
+    color: white;
+    padding: 15px;
+    margin: 5px 0;
+}
+.btn{
+    color: aliceblue;
+    font-weight: bolder;
+    transition: 2s;
+}
+.btn:hover{
+    background-color: blue ;
+    color: rgb(231, 27, 27);
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+/* features ends form here */
+/* about section start here */
+
+
+/* about section ends here */
+
+.computer img{
+    height: 220px;
+    width: auto;
+}
+.com img{
+    border: none;
+    padding: 10px;
+    margin: 0px 0px;
+    transition: .4s;
+    height: 225px;
+    width: 225px;
+}
+.com img:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 6px 5px 5px rgb(8, 235, 42);
+}  
+
+/* Learning section starts here */
+.row h6{
+    color: white;
+}
+.div1{
+   
+        background-image: url(imges/codding2.jpg);
+        background-position: center;
+        transition: 2s;
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(11, 245, 31);
+        border: 5px solid rgb(19, 122, 232);
+        
+    }
+    .benner-container{
+        height: 100vh;
+}
+.div1:hover{
+    border: 5px solid red;
+    transform: scale(0.9);
+}
+.div2{
+   
+    background-image: url(imges/codding1.jpg);
+    background-position: center;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(8, 195, 242);
+    border: 5px solid rgb(19, 122, 232);
+}
+.benner-container{
+    height: 100vh;
+}
+.div2:hover{
+    border: 5px solid red;
+    transform: scale(0.9);
+}
+.div3{
+   
+    background-image: url(imges/app.jpg);
+    background-position: center;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(208, 235, 5);
+    border: 5px solid rgb(19, 122, 232);
+}
+.benner-container{
+    height: 100vh;
+}
+.div3:hover{
+    border: 5px solid red;
+    transform: scale(0.9);
+}
+#benner{
+   
+    background-image:url("{% static 'images/nature5.jpg'%}");
+    background-position: center;
+    transition: 2s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(242, 7, 7);
+    border: 5px solid rgb(19, 122, 232);
+}
+.benner-container{
+    height: 100vh;
+}
+.div4:hover{
+    border: 5px solid red;
+    transform: scale(0.9);
+}
+
+.feedback-img{
+    width: 202px;
+    height: auto;
+    margin-bottom: 5px;
+
+}
+.carousel-item{
+    text-align: center;
+    padding: 7% 15%;
+}
+.container2{
+    background-color: rgb(35, 62, 53);
+}
+/* Learning section ends here */
+/* main section ends here */
+
+/* footer starts from here */
+footer{
+    background-color: black;
+}
+
+.jeson a{
+    color: aliceblue;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+    transition: 2s;
+
+}
+
+.jeson a:hover{
+    color: rgb(16, 17, 18);
+    text-decoration: none;
+    margin: 10px;
+    background-color: green;
+    font-size: 10;
+    transform: scale(1.1);
+    font-weight: bolder;
+    border: #bb0aac;
+    border-radius: 7px;
+    padding: 4px;
+}
+/* footer ends from here */
+</style>
+
+    <header id="home">
+       
+          <section id="benner">
+              <div class="benner-container d-flex justify-content-center align-items-center">
+                  <div class="benner-body text-center"  > 
+                      <h1 data-aos="fade-up" data-aos-delay="500"
+                      data-aos-anchor-placement="center-bottom"   class="font-weight text-white mb-5">Awesome Special Website !!</h1>
+                      <a href="/"><button data-aos="fade-up" data-aos-delay="600"
+                        data-aos-anchor-placement="center-bottom" class="btn btn-lg btn-primary m-3" onclick="location.href='#' "> <i class="fas fa-play mr-2"></i> Awesome</button></a>
+                     <a href="#collection"><button data-aos="fade-up" data-aos-delay="700"
+                      data-aos-anchor-placement="center-bottom" class="btn btn-lg btn-primary m-3" onclick="location.href='#' " class="request-callback" > <i class="fab fa-youtube mr-2 ml-2"></i> Collection</button></a>
+                  </div>
+              </div>
+          </section>
+    </header>
+    <main>
+
+      <section id="  features " class="text-center">
+        <div class="row" id="info">
+          <div class="col-lg-4 d-block d-lg-flex">
+            <div class="features-col " data-aos="fade-up" data-aos-delay="500"
+            data-aos-anchor-placement="center-bottom">
+              <i class="fas fa-hand-holding-usd fa-3x icon-syle rounded-circle"></i>
+              <h5 class="font-weight-bold">Free to Use</h5>
+              <p class="small">I am teaching you as per as well. Suscipit, impedit quia nostrum fuga dignissimos perferendis commodi aliquam beatae error consectetur temporibus harum asperiores sunt voluptatibus! Dolorem culpa praesentium dolorum minima incidunt, explicabo nobis voluptate dolor enim ipsum minus laborum odit reprehenderit mollitia reiciendis aliquid aperiam molestiae quis eligendi officia ipsam?</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-block d-lg-flex">
+            <div class="features-col" data-aos="fade-up" data-aos-delay="600"
+            data-aos-anchor-placement="center-bottom" >
+              <i class="fas fa-hand-holding-usd fa-3x icon-syle rounded-circle"></i>
+              <h5 class="font-weight-bold">Free to Use</h5>
+              <p class="small">You can learn here web developing it. Suscipit, impedit quia nostrum fuga dignissimos perferendis commodi aliquam beatae error consectetur temporibus harum asperiores sunt voluptatibus! Dolorem culpa praesentium dolorum minima incidunt, explicabo nobis voluptate dolor enim ipsum minus laborum odit reprehenderit mollitia reiciendis aliquid aperiam molestiae quis eligendi officia ipsam?</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-block d-lg-flex">
+            <div class="features-col " data-aos="fade-up" data-aos-delay="700"
+            data-aos-anchor-placement="center-bottom">
+              <i class="fas fa-hand-holding-usd fa-3x icon-syle rounded-circle"></i>
+              <h5 class="font-weight-bold">Free to Use</h5>
+              <p class="small">You will success here. Suscipit, impedit quia nostrum fuga dignissimos perferendis commodi aliquam beatae error consectetur temporibus harum asperiores sunt voluptatibus! Dolorem culpa praesentium dolorum minima incidunt, explicabo nobis voluptate dolor enim ipsum minus laborum odit reprehenderit mollitia reiciendis aliquid aperiam molestiae quis eligendi officia ipsam?</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      
+      <hr data-aos="fade-up" data-aos-delay="500"
+      data-aos-anchor-placement="center-bottom" class="hr-style"/>
+      <hr data-aos="fade-up" data-aos-delay="500"
+      data-aos-anchor-placement="center-bottom" class="hr-style"/>
+
+
+      <section id=" computer " class="computer text-center">
+        <h3 data-aos="fade-up" data-aos-delay="500"
+        data-aos-anchor-placement="center-bottom" id="collection" class="text-center mt-5 mb-5">Collection</h3>
+        <div class="row" >
+          <div class="mb-5 col-sm-12 col-lg-4 d-block d-lg-flex">
+            <div class="col com" data-aos="fade-up" data-aos-delay="600"
+            data-aos-anchor-placement="center-bottom">
+              <img src="{% static 'images/i.jpg'%}" alt="">
+            </div>
+          </div>
+          <div class="mb-5 col-sm-12 col-lg-4 d-block d-lg-flex">
+            <div class="col com" data-aos="fade-up" data-aos-delay="700"
+            data-aos-anchor-placement="center-bottom">
+              <img src="{% static 'images/j.jpg'%}" alt="">
+            </div>
+          </div>
+          
+          <div class=" mb-5 col-sm-12 col-lg-4 d-block d-lg-flex">
+            <div class="col com" data-aos="fade-up" data-aos-delay="800"
+            data-aos-anchor-placement="center-bottom">
+              <img src="{% static 'images/k.jpg'%}" alt="">
+            </div>
+          </div>
+          
+        </div>
+
+
+      </section>
+
+      <div class="learning-list">
+        <div class="learning-title">
+          <h3 data-aos="fade-up" data-aos-delay="500"
+          data-aos-anchor-placement="center-bottom" class="text-center mt-5 mb-5 text-danger">Our Learning List</h3>
+        </div>
+        <div class="row">
+          <div class=" mb-5 col-sm-12 col-lg-3 d-block d-lg-flex" >
+            <div class="div1 text-center" data-aos="fade-up" data-aos-delay="600"
+            data-aos-anchor-placement="center-bottom">
+              <div data-aos="fade-up" data-aos-delay="700"
+              data-aos-anchor-placement="center-bottom" class="l-title">
+                <h6 class="mt-3 text-danger">Web Design</h6>
+
+              </div>
+              <div data-aos="fade-up" data-aos-delay="800"
+              data-aos-anchor-placement="center-bottom" class="l-body m-3" >
+                You can learn and practice here free. We give you easy way to learn.
+                We will give you practice season here so that you can learn proparly Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, explicabo officiis iusto perferendis hic excepturi, libero, tenetur quidem rerum adipisci optio consectetur? Soluta magni ea voluptate corporis cupiditate nisi illo?
+              </div>
+            </div>
+          </div>
+          <div class="mb-5 col-sm-12 col-lg-3 d-block d-lg-flex">
+            <div class="div2 text-center" data-aos="fade-up" data-aos-delay="900"
+            data-aos-anchor-placement="center-bottom">
+              <div class="l-title">
+                <h6 data-aos="fade-up" data-aos-delay="1000"
+                data-aos-anchor-placement="center-bottom" class="mt-3 text-danger">Web Apps</h6>
+
+              </div>
+              <div data-aos="fade-up" data-aos-delay="1100"
+              data-aos-anchor-placement="center-bottom" class="l-body m-3">
+                You can learn and practice here free. We give you easy way to learn.
+                We will give you practice season here so that you can learn proparly Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis officia natus magnam similique autem, neque vitae est provident ex id consequuntur, perferendis repellat, ad et beatae sapiente corrupti. Minus, voluptatem?
+              </div>
+            </div>
+          </div>
+          <div class="mb-5 col-sm-12 col-lg-3 d-block d-lg-flex">
+            <div data-aos="fade-up" data-aos-delay="1200"
+            data-aos-anchor-placement="center-bottom" class="div3 text-center">
+              <div class="l-title">
+                <h6 data-aos="fade-up" data-aos-delay="1300"
+                data-aos-anchor-placement="center-bottom" class="mt-3 text-danger">Apps Developer</h6>
+
+              </div>
+              <div data-aos="fade-up" data-aos-delay="1400"
+              data-aos-anchor-placement="center-bottom" class="l-body m-3">
+                You can learn and practice here free. We give you easy way to learn.
+                We will give you practice season here so that you can learn proparly Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus nam perspiciatis harum explicabo pariatur debitis repellat neque veniam atque quod reiciendis ratione, numquam fugiat dolorem soluta praesentium. Ad, quidem?
+              </div>
+            </div>
+          </div>
+          <div class="mb-5 col-sm-12 col-lg-3 d-block d-lg-flex">
+            <div data-aos="fade-up" data-aos-delay="1500"
+            data-aos-anchor-placement="center-bottom" class=" div3 text-center">
+              <div class="l-title">
+                <h6 data-aos="fade-up" data-aos-delay="1600"
+                data-aos-anchor-placement="center-bottom" class="mt-3 text-danger">Animation</h6>
+
+              </div>
+              <div data-aos="fade-up" data-aos-delay="1700"
+              data-aos-anchor-placement="center-bottom" class="l-body m-3">
+                You can learn and practice here free. We give you easy way to learn.
+                We will give you practice season here so that you can learn proparly Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus nam perspiciatis harum explicabo pariatur debitis repellat neque veniam atque quod reiciendis ratione, numquam fugiat dolorem soluta praesentium. Ad, quidem?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- slider section starts from here -->
+      <div class="container2 text-white">
+        <section id="feedback">
+            <div class="section-title ">
+                <h3 data-aos="fade-up" data-aos-delay="500"
+                data-aos-anchor-placement="center-bottom" class="text-center ttt ">Feedback</h3>
+                <hr class="hr-style"/>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur repellendus harum sed doloremque voluptatem odit repudiandae? Dolores sint aspernatur libero facilis. Porro quod possimus provident placeat fugit omnis quibusdam quas fuga asperiores quisquam odio commodi eaque, ratione magnam nostrum, inventore quaerat necessitatibus iste. Id fugit sequi porro consequatur nam.</p>
+                  <img data-aos="fade-up" data-aos-delay="500"
+                  data-aos-anchor-placement="center-bottom" class="rounded-circle feedback-img" src="{% static 'images/bird6.jpg' %}" class="d-block w-100" alt="feedback-img">
+                  <h6 class=" mt-3">Animation Maker</h6>
+                </div>
+                <div class="carousel-item">
+                  <p>dolor sit amet consectetur adipisicing elit. Placeat consequatur repellendus harum sed doloremque voluptatem odit repudiandae? Dolores sint aspernatur libero facilis. Porro quod possimus provident placeat fugit omnis quibusdam quas fuga asperiores quisquam odio commodi eaque, ratione magnam nostrum, inventore quaerat necessitatibus iste. Id fugit sequi porro consequatur nam.</p>
+                  <img data-aos="fade-up" data-aos-delay="500"
+                  data-aos-anchor-placement="center-bottom" class="rounded-circle feedback-img" src="{% static 'images/nature1.jpg' %}" class="d-block w-100" alt="feedback-img">
+                  <h6 class=" mt-3">Sujon Roy</h6>
+                </div>
+                <div class="carousel-item">
+                  <p>sit amet consectetur adipisicing elit. Placeat consequatur repellendus harum sed doloremque voluptatem odit repudiandae? Dolores sint aspernatur libero facilis. Porro quod possimus provident placeat fugit omnis quibusdam quas fuga asperiores quisquam odio commodi eaque, ratione magnam nostrum, inventore quaerat necessitatibus iste. Id fugit sequi porro consequatur nam.</p>
+                  <img data-aos="fade-up" data-aos-delay="500"
+                  data-aos-anchor-placement="center-bottom" class="rounded-circle feedback-img" src="{% static 'images/nature2.jpg'%}" class="d-block w-100" alt="feedback-img">
+                  <h6 class=" mt-3">Learn Coding</h6>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> 
+          </div>
+     <!-- slider section ends from here -->
+    </main>
+    <footer>
+     <div class="footer-ul">
+       <div class="row">
+         <div class="col">
+          <div class="titile-footer">
+            <h1 data-aos="fade-up" data-aos-delay="500"
+            data-aos-anchor-placement="center-bottom" class="text-light m-4 text-center">Join With Me To Learn</h1>
+          </div>
+         </div>
+
+         <div class="col-sm-6 col-lg-6">
+          <div class="jeson m-4 text-center">
+            
+
+              <a data-aos="fade-up" data-aos-delay="600"
+              data-aos-anchor-placement="center-bottom" href="#">Home</a>
+              <a data-aos="fade-up" data-aos-delay="700"
+              data-aos-anchor-placement="center-bottom"  href="#">Contact</a>
+              <a data-aos="fade-up" data-aos-delay="800"
+              data-aos-anchor-placement="center-bottom" href="#about me">About me</a>
+              <a data-aos="fade-up" data-aos-delay="900"
+              data-aos-anchor-placement="center-bottom" href="#collection">Collection</a>
+            
+          </div>
+        </div>
+       </div>
+      
+     </div>
+    </footer>
+
+{% endblock body %}
+
